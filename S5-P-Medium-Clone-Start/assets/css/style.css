@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Spectral:wght@300;700&display=swap");
+
+a {
+  text-decoration: none;
+  appearance: none;
+  color: #191919;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+#navbar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #ffc017;
+  border-bottom: #191919 solid 0.8px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+#navbar img {
+  width: 130px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li {
+  padding: 10px;
+}
+
+.button {
+  background-color: #191919;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 11px;
+  height: 29px;
+  width: 85px;
+}
+
+.home-container {
+  background-color: #ffc017;
+  min-height: 300px;
+  width: 100%;
+  border-bottom: #191919 solid 0.8px;
+  padding: 100px;
+}
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.home-info h1 {
+  font-weight: 400 bolder;
+  letter-spacing: -6px;
+  font-family: "Spectral", sans-serif;
+  font-size: 6rem;
+}
+
+.home-info p {
+  font-size: 25px;
+}
+
+#home-btn {
+  width: 130px;
+  font-size: 14px;
+}
+
+.trending {
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  padding-left: 80px;
+}
+
+.trending h4 {
+  font-weight: bold;
+  font-size: 10px;
+  align-self: center;
+  padding: 5px;
+}
+
+.trends {
+  border-bottom: 0.8px solid #e7e7e6;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.trend-username {
+  display: flex;
+  align-items: center;
+}
+
+.trend-username span {
+  color: #e7e7e6;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.trend-username .circle-img {
+  border-radius: 50%;
+  width: 15px;
+}
+
+.trend-username .box-img {
+  border-radius: 25%;
+  width: 15px;
+}
+
+.trend-username p {
+  font-size: 10px;
+  padding: 5px;
+}
+
+.trend-info h4 {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.trend-date {
+  color: #6f6f6e;
+  font-size: 10px;
+}
+
+.article-username {
+  display: flex;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  gap: 20px;
+  padding-left: 80px;
+}
+
+.big-image {
+  width: 200px;
+  height: 134px;
+}
+
+.circle-img {
+  border-radius: 50%;
+  width: 15px;
+}
+
+.user {
+  font-size: 10px;
+  padding-left: 2px;
+}
+
+.article-content {
+  margin: 30px;
+}
+
+article h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
