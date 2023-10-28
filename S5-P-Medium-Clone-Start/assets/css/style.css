@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Spectral:wght@300;700&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   appearance: none;
@@ -8,37 +14,43 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 1200px;
 }
 
 .nav-container {
-  width: 100%;
+  display: flex;
 }
 
-#navbar {
+nav {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   background-color: #ffc017;
   border-bottom: #191919 solid 0.8px;
-  min-height: 50px;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
+  padding: 0.5rem;
+  padding-left: 120px;
+  padding-right: 120px;
   width: 100%;
   position: fixed;
   top: 0px;
+  z-index: 1;
 }
 
-#navbar img {
-  width: 130px;
+nav img {
+  width: 120px;
+  margin-right: auto;
 }
 
-#navbar ul {
+nav ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-#navbar ul li {
+nav ul li {
   padding: 10px;
 }
 
@@ -52,57 +64,85 @@ body {
   width: 85px;
 }
 
-.home-container {
+.home {
   background-color: #ffc017;
-  min-height: 300px;
-  width: 100%;
   border-bottom: #191919 solid 0.8px;
-  padding: 100px;
+  min-height: 38vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home-container {
+  width: 100%;
 }
 
 .home-info {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 25px;
+  position: absolute;
+  top: 8rem;
+  left: 7rem;
 }
 
 .home-info h1 {
-  font-weight: 400 bolder;
+  font-weight: 400;
   letter-spacing: -6px;
   font-family: "Spectral", sans-serif;
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 
 .home-info p {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 #home-btn {
-  width: 130px;
+  width: 150px;
   font-size: 14px;
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 0.5rem;
 }
 
 .trending {
-  width: 100%;
   display: flex;
-  padding-top: 15px;
-  padding-left: 80px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.trending img {
+  width: 22px;
 }
 
 .trending h4 {
   font-weight: bold;
   font-size: 10px;
-  align-self: center;
-  padding: 5px;
+  letter-spacing: 1px;
+  padding-left: 10px;
 }
 
 .trends {
   border-bottom: 0.8px solid #e7e7e6;
   display: flex;
-  align-items: center;
-  padding-bottom: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.trend {
+  width: 300px;
+  display: flex;
+  gap: 5px;
+  justify-content: left;
 }
 
 .trend-username {
@@ -120,6 +160,7 @@ body {
 .trend-username .circle-img {
   border-radius: 50%;
   width: 15px;
+  margin-left: 10px;
 }
 
 .trend-username .box-img {
@@ -135,16 +176,22 @@ body {
 .trend-info h4 {
   font-weight: bold;
   font-size: 12px;
+  margin-top: 0.5rem;
 }
 
 .trend-date {
   color: #6f6f6e;
   font-size: 10px;
+  margin-top: 0.5rem;
 }
 
 .article-username {
   display: flex;
   align-items: center;
+}
+
+section {
+  width: 60%;
 }
 
 article {
@@ -153,13 +200,8 @@ article {
   padding-left: 80px;
 }
 
-.big-image {
-  width: 200px;
-  height: 134px;
-}
-
 .circle-img {
-  border-radius: 50%;
+  border-radius: 40%;
   width: 15px;
 }
 
@@ -177,4 +219,20 @@ article h4 {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.article-text {
+  font-size: 14px;
+  color: #6f6f6e;
+  padding-bottom: 10px;
+}
+
+.grey-button {
+  color: #787979;
+  background-color: #e7e7e6;
+}
+
+.article-date {
+  color: #6f6f6e;
+  font-size: 10px;
 }
