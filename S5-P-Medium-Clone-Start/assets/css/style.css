@@ -67,7 +67,7 @@ nav ul li {
 .home {
   background-color: #ffc017;
   border-bottom: #191919 solid 0.8px;
-  min-height: 38vh;
+  min-height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -135,19 +135,21 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .trend {
   width: 300px;
   display: flex;
-  gap: 5px;
   justify-content: left;
+  flex-direction: column;
 }
 
 .trend-username {
   display: flex;
   align-items: center;
+  position: relative;
+  left: -10px;
 }
 
 .trend-username span {
@@ -155,6 +157,12 @@ main {
   font-size: 25px;
   font-weight: bold;
   padding-right: 5px;
+}
+
+.username {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .trend-username .circle-img {
@@ -166,6 +174,7 @@ main {
 .trend-username .box-img {
   border-radius: 25%;
   width: 15px;
+  margin-left: 10px;
 }
 
 .trend-username p {
@@ -173,16 +182,40 @@ main {
   padding: 5px;
 }
 
+.trend-info-date {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  margin-bottom: 15px;
+  position: relative;
+  left: -10px;
+}
+
+.trend-info {
+  display: flex;
+  margin-top: -5px;
+}
+
 .trend-info h4 {
   font-weight: bold;
   font-size: 12px;
   margin-top: 0.5rem;
+  margin-right: 24px;
+  line-height: 15px;
 }
 
 .trend-date {
   color: #6f6f6e;
   font-size: 10px;
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.trend-date img {
+  margin-left: 5px;
+  width: 15px;
 }
 
 .article-username {
