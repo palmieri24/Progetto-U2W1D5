@@ -64,6 +64,14 @@ nav ul li {
   width: 85px;
 }
 
+.navWhite {
+  background-color: white;
+}
+
+.btnGreen {
+  background-color: #1a8917;
+}
+
 .home {
   background-color: #ffc017;
   border-bottom: #191919 solid 0.8px;
@@ -135,6 +143,7 @@ main {
   font-size: 10px;
   letter-spacing: 1px;
   padding-left: 10px;
+  color: #454646;
 }
 
 .trends {
@@ -337,4 +346,13 @@ main {
   color: grey;
   text-decoration: none;
   font-size: 0.8em;
+}
+
+.aside h4 {
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  color: #454646;
+  margin-bottom: 10px;
 }
